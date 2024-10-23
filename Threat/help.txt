@@ -1,0 +1,56 @@
+python3 -m venv myenv
+
+source myenv/bin/activate
+
+pip install uro
+
+
+git clone https://github.com/tomnomnom/gf.git
+
+
+                                                                                                                                                                                                                                          
+┌──(kali㉿kali)-[~/Downloads/XSS-Automation]
+└─$ source myenv/bin/activate
+
+                                                                                                                                                                                                                                           
+┌──(myenv)─(kali㉿kali)-[~/Downloads/XSSThreat]
+└─$ pip install uro
+
+
+
+
+┌──(myenv)─(kali㉿kali)-[~/Downloads]
+└─$ git clone https://github.com/tomnomnom/gf.git
+
+                                                                                                                                                                                                                                           
+┌──(myenv)─(kali㉿kali)-[~/Downloads]
+└─$ cd gf
+                                                                                                                                                                                                                                           
+┌──(myenv)─(kali㉿kali)-[~/Downloads/gf]
+└─$ go mod init gf                               
+
+                                                                                                                                                                                                                    
+┌──(myenv)─(kali㉿kali)-[~/Downloads/gf]
+└─$ go install
+                                                                                                                                                                                                              
+                                                                                                                                                                                                                                           
+┌──(myenv)─(kali㉿kali)-[~/Downloads/Threat]
+└─$ sudo chmod +x threat.sh          
+
+                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                           
+┌──(myenv)─(kali㉿kali)-[~/Downloads/Threat]
+└─$ echo $PATH
+
+/home/kali/Downloads/XSS-Automation/myenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games
+                                                                                                                                                                                                                                           
+┌──(myenv)─(kali㉿kali)-[~/Downloads/XSS-Automation]
+└─$ export PATH=$PATH:~/go/bin
+
+                                                                                                                                                                                                                                           
+┌──(myenv)─(kali㉿kali)-[~/Downloads/Threat]
+└─$ source ~/.bashrc  # or source ~/.zshrc, depending on your shell
+                                                                                                                                                                                                          
+
+                                                                                                                                                                                                                                           
+\[\e]0;\u@\h: \w\a\]\[\033[;32m\]┌──(\[\033[0;1m\]myenv\[\033[;32m\])(\[\033[1;34m\]\u㉿\h\[\033[;32m\])-[\[\033[0;1m\]\w\[\033[;32m\]]\n\[\033[;32m\]└─\[\033[1;34m\]$\[\033[0m\] ./threat.sh               
